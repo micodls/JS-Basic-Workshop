@@ -1,11 +1,11 @@
 function triangleArea(input) {
-    var s = input.reduce(function (prev, curr) {
+    var semiperimeter = input.reduce(function (prev, curr) {
         return prev + curr;
     })/2;
 
     return Math.sqrt(input.reduce(function (prev, curr) {
-        return prev * (s - curr);
-    }, s));
+        return prev * (semiperimeter - curr);
+    }, semiperimeter));
 }
 
 module.exports.triangleArea = triangleArea;
