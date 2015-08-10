@@ -1,0 +1,53 @@
+Write code as short (and functional!) as possible:
+
+1. Write a JS function that will reverse a number. Example:
+
+console.log(numberReverse(12345)); // should print "54321"
+
+2. Write a JS function that will check if given string is a palindrome. Try not to use any loops or recursion.
+
+3. Write a JS function that will return input string with all characters in alphabetical order. Try not to use any loops or recursion.
+
+4. Write a JS function that will make first letter of every word passed in a input string to be upper case. Don't use any for/while loops or recursion.
+
+5. Write a JS function that will return length of the longest word in passed string. Don't use any for/while loops or recursion.
+
+6. Write a JS function that will compute area of triangle from lengths of it's sides. (Hint: Heron's formula)
+
+7. Write a JS function that will generate random integer from given range or range 0; max if only one argument was given. Example:
+
+rand(3, 6) should return random integer from range <3; 6>
+rand(5) should return random integer from range <0; 5>
+
+8. Write a JS function to find highest value in an array. Don't use any for/while loops or recursion.
+
+9. Write a JS function to find highest and lowest value in an array. Without using Math.max or Math.min. Don't use any for/while loops or recursion.
+
+10. Write a JS program that will print current time every 1s in H:M:S format or similar. Don't block code execution. Any following code should work without delays.
+
+11. Write a JS function that will flatten nested array. Hint: use recursion. Example: 
+
+flatten([1, [2, [3, 4], [[5]], 6]]) should return: [1, 2, 3, 4, 5, 6]
+
+12. Given an Array of strings, use Array#reduce to create an object that contains the number of times each string occured in the array. Return the object directly. Don't use any for/while loops, forEach or recursion. Example:
+
+words("aa bb ccc aa") should return: {"aa": 2, "bb": 1, "ccc": 1}
+
+13. Implement Array#reduce using recursion. Don't use any for/while loops, forEach, map etc.
+
+14. Write a function that will return a function that will act as logger and will have predefined prefix. Returned function should take any number of arguments each being part of log message but not the prefix itself. Example:
+var info = logger('INFO:')
+info('this is an info message')
+// INFO: this is an info message
+
+var warn = logger('WARN:')
+warn('this is a warning message', 'with more info')
+// WARN: this is a warning message with more info
+
+15. Consider the following code:
+    for (var i = 0; i < 10; ++i) {
+        setTimeout(function() {console.log(i); }, 1000+i);
+    }
+
+a) Try to guess what will it print without checking?
+b) How to modify this code so it prints numbers ranging from 0 to 9?
