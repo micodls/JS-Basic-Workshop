@@ -9,6 +9,7 @@ var hv = require('./highestValue.js').highestValue;
 var hl = require('./highLow.js').highLow;
 var ct = require('./currentTime.js').currentTime;
 var fm = require('./flattenMe.js').flattenMe;
+var cw = require('./countWords.js').countWords;
 var rr = require('./reduceRecursive.js').reduceRecursive;
 var l = require('./logger.js').logger;
 var p = require('./print.js').print;
@@ -25,6 +26,9 @@ console.log('9. ' + hl([4, 15, 13, 20, 20]));
 console.log('10. ');
 // ct();
 console.log('11. ' + fm([1, [2, [3, 4], [[5]], 6]]));
+console.log('12. ');
+var count = cw(['aa', 'bb', 'ccc', 'aa']);
+console.log(count);
 console.log('13. ');
 var arr = rr([1,2,3], function (prev, curr) {
     return prev + curr;
